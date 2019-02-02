@@ -160,7 +160,7 @@ BLYNK_READ(V5)
 
 BLYNK_READ(V6)
 { 
-  Blynk.virtualWrite(V6, tempValues[1]);
+  Blynk.virtualWrite(V6, String(hour()) + ":" + minute() + ":" + second());
 }
 
 void loop()
